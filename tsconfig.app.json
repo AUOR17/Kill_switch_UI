@@ -21,7 +21,11 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* 👇 clave para import.meta.env */
+    "types": ["vite/client"]
   },
-  "include": ["src"]
+  /* 👇 si dejaste vite-env.d.ts en raíz, inclúyelo explícitamente */
+  "include": ["src", "vite-env.d.ts"]
 }
